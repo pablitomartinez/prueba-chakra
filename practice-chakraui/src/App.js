@@ -10,6 +10,8 @@ import {
 // import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { theme } from './resources';
 import planta from './resources/images/planta.png';
+import BannerMovvie from './components/BannerMovie';
+
 function App() {
   return (
     <ChakraProvider theme={theme}>
@@ -30,11 +32,7 @@ function App() {
           p={['0 10%', null, '0 20%']}
         >
           <Heading
-            color="white"
-            textTransform="uppercase"
-            textAlign="center"
-            fontWeight="light"
-            letterSpacing="5px"
+            variant='banner'
           >
             domina el terreno
           </Heading>
@@ -48,37 +46,25 @@ function App() {
             >
             <Button
               variant="outline"
-              fontWeight="light"
-              borderRadius="0"
-              color="white"
               size="lg"
-              textTransform="uppercase"
-              letterSpacing="1px"
-              _hover={{
-                color: 'black',
-                bg: 'white',
-              }}
-            >
+              
+              >
               cuidar
             </Button>
             <Button
               variant="outline"
-              fontWeight="light"
-              borderRadius="0"
-              color="white"
               size="lg"
-              textTransform="uppercase"
-              letterSpacing="1px"
-              _hover={{
-                color: 'black',
-                bg: 'white',
-              }}
             >
               valorar
             </Button>
           </Stack>
         </Flex>
       </Box>
+      <BannerMovvie/>
+      
+
+      
+
     </ChakraProvider>
   );
 }
