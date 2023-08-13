@@ -11,6 +11,7 @@ import {
 import { theme } from './resources';
 import planta from './resources/images/planta.png';
 import BannerMovvie from './components/BannerMovie';
+import { Video } from './components/Video';
 
 function App() {
   return (
@@ -61,10 +62,10 @@ function App() {
         </Flex>
       </Box>
       <BannerMovvie/>
-      
 
       
 
+      <Video/>
     </ChakraProvider>
   );
 }
